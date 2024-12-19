@@ -71,6 +71,61 @@ const LatihanSoal = () => {
       explanation:
         "Kekurangan oksigen pada sel-sel tubuh dapat menyebabkan gangguan fungsi sel dan akhirnya kematian sel, karena sel tidak dapat melakukan respirasi aerob yang diperlukan untuk menghasilkan energi.",
     },
+    {
+      question: "Apa yang dimaksud dengan sistem peredaran darah manusia?",
+      options: [
+        { label: "A. Sistem yang mengatur suhu tubuh", value: "A" },
+        { label: "B. Sistem yang mengangkut oksigen dan nutrisi ke seluruh tubuh", value: "B", isCorrect: true },
+        { label: "C. Sistem yang mengeluarkan zat sisa dari tubuh", value: "C" },
+        { label: "D. Sistem yang memproduksi hormon", value: "D" },
+      ],
+      explanation:
+        "Sistem peredaran darah manusia berfungsi untuk mengangkut oksigen, nutrisi, dan zat-zat penting lainnya ke seluruh tubuh serta mengeluarkan produk sampingan seperti karbon dioksida.",
+    },
+    {
+      question: "Bagaimana proses transportasi oksigen dalam darah?",
+      options: [
+        { label: "A. Oksigen diikat oleh hemoglobin dalam darah", value: "A", isCorrect: true },
+        { label: "B. Oksigen disalurkan oleh sel darah putih", value: "B" },
+        { label: "C. Oksigen langsung diserap oleh jaringan tubuh", value: "C" },
+        { label: "D. Oksigen dibawa oleh sistem limfatik", value: "D" },
+      ],
+      explanation:
+        "Oksigen diikat oleh hemoglobin dalam sel darah merah dan dibawa ke seluruh tubuh untuk disalurkan ke jaringan tubuh yang membutuhkan.",
+    },
+    {
+      question: "Apa yang dimaksud dengan sistem peredaran limfatik?",
+      options: [
+        { label: "A. Sistem yang mengangkut darah ke jantung", value: "A" },
+        { label: "B. Sistem yang mengangkut limfa dan lemak", value: "B", isCorrect: true },
+        { label: "C. Sistem yang mengatur metabolisme tubuh", value: "C" },
+        { label: "D. Sistem yang mengangkut karbon dioksida", value: "D" },
+      ],
+      explanation:
+        "Sistem peredaran limfatik berfungsi untuk mengangkut limfa yang mengandung sel-sel imun dan lemak yang diserap dari usus.",
+    },
+    {
+      question: "Bagaimana cara tubuh mengatur kadar oksigen dalam darah?",
+      options: [
+        { label: "A. Dengan meningkatkan produksi sel darah merah", value: "A", isCorrect: true },
+        { label: "B. Dengan menurunkan jumlah hemoglobin", value: "B" },
+        { label: "C. Dengan meningkatkan laju pernapasan", value: "C" },
+        { label: "D. Dengan menurunkan tekanan darah", value: "D" },
+      ],
+      explanation:
+        "Tubuh mengatur kadar oksigen dalam darah dengan cara meningkatkan produksi sel darah merah dan mempercepat pernapasan jika kadar oksigen menurun.",
+    },
+    {
+      question: "Apa yang terjadi jika sistem peredaran darah terganggu?",
+      options: [
+        { label: "A. Tubuh akan mengalami kesulitan dalam transportasi oksigen", value: "A", isCorrect: true },
+        { label: "B. Tubuh akan menjadi lebih kuat", value: "B" },
+        { label: "C. Tubuh akan memiliki lebih banyak energi", value: "C" },
+        { label: "D. Tubuh akan lebih mudah mencerna makanan", value: "D" },
+      ],
+      explanation:
+        "Jika sistem peredaran darah terganggu, tubuh akan mengalami kesulitan dalam mengangkut oksigen dan nutrisi ke seluruh tubuh, yang dapat menyebabkan gangguan fungsi organ.",
+    },
   ];
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -115,7 +170,6 @@ const LatihanSoal = () => {
     setIsFinished(false);
   };
 
-
   if (isFinished) {
     return (
       <div className="latihan-soal1-container">
@@ -126,8 +180,8 @@ const LatihanSoal = () => {
             Skor Anda: {score}/{questions.length}
           </p> 
           <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
-          Ulangi Latihan
-        </button>
+            Ulangi Latihan
+          </button>
         </div>
       </div>
     );
@@ -173,29 +227,29 @@ const LatihanSoal = () => {
           </div>
         )}
         <div className="latihan-soal1-navigation-buttons">
-        <button
-  className="latihan-soal1-nav-button prev"
-  onClick={goToPreviousQuestion}
-  disabled={currentQuestionIndex === 0}
->
-  ← Soal Sebelumnya
-</button>
-<button
-  className="latihan-soal1-nav-button next"
-  onClick={
-    currentQuestionIndex === questions.length - 1
-      ? handleFinishQuiz
-      : goToNextQuestion
-  }
->
-  {currentQuestionIndex === questions.length - 1
-    ? "Selesai"
-    : "Soal Selanjutnya →"}
-</button>
-
+          <button
+            className="latihan-soal1-nav-button prev"
+            onClick={goToPreviousQuestion}
+            disabled={currentQuestionIndex === 0}
+          >
+            ← Soal Sebelumnya
+          </button>
+          <button
+            className="latihan-soal1-nav-button next"
+            onClick={
+              currentQuestionIndex === questions.length - 1
+                ? handleFinishQuiz
+                : goToNextQuestion
+            }
+          >
+            {currentQuestionIndex === questions.length - 1
+              ? "Selesai"
+              : "Soal Selanjutnya →"}
+          </button>
         </div>
       </div>
     </div>
   );
 };
+
 export default LatihanSoal;

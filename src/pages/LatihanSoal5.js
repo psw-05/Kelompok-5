@@ -65,6 +65,61 @@ const LatihanSoal5 = () => {
       explanation:
         "Vaksin bekerja dengan cara memperkenalkan tubuh pada patogen yang telah dilemahkan atau dimodifikasi, sehingga tubuh bisa membangun kekebalan terhadap patogen tersebut tanpa menimbulkan penyakit.",
     },
+    {
+      question: "Apa peran utama dari sel T dalam sistem imun?",
+      options: [
+        { label: "A. Mengangkut oksigen ke jaringan tubuh", value: "A" },
+        { label: "B. Menghasilkan antibodi", value: "B" },
+        { label: "C. Menghancurkan sel yang terinfeksi patogen", value: "C", isCorrect: true },
+        { label: "D. Menyimpan informasi genetik", value: "D" },
+      ],
+      explanation:
+        "Sel T berperan dalam menghancurkan sel yang telah terinfeksi oleh patogen, serta membantu mengatur respon imun tubuh.",
+    },
+    {
+      question: "Apa yang dimaksud dengan imunitas pasif?",
+      options: [
+        { label: "A. Imunitas yang diperoleh melalui vaksinasi", value: "A" },
+        { label: "B. Imunitas yang diperoleh dari antibodi orang lain", value: "B", isCorrect: true },
+        { label: "C. Imunitas yang diperoleh dari olahraga", value: "C" },
+        { label: "D. Imunitas yang diperoleh melalui infeksi sebelumnya", value: "D" },
+      ],
+      explanation:
+        "Imunitas pasif adalah jenis imunitas yang diperoleh ketika seseorang menerima antibodi dari sumber luar, seperti melalui ASI atau injeksi antibodi.",
+    },
+    {
+      question: "Apa fungsi dari limfa dalam sistem imun?",
+      options: [
+        { label: "A. Mengangkut nutrisi ke sel", value: "A" },
+        { label: "B. Menyaring patogen dari cairan tubuh", value: "B", isCorrect: true },
+        { label: "C. Menghasilkan energi", value: "C" },
+        { label: "D. Mengatur suhu tubuh", value: "D" },
+      ],
+      explanation:
+        "Limfa berfungsi menyaring patogen dan partikel asing dari cairan tubuh serta membantu melawan infeksi.",
+    },
+    {
+      question: "Apa yang terjadi saat tubuh mengalami peradangan?",
+      options: [
+        { label: "A. Suhu tubuh menurun", value: "A" },
+        { label: "B. Jaringan tubuh memperbaiki kerusakan", value: "B", isCorrect: true },
+        { label: "C. Produksi sel darah merah meningkat", value: "C" },
+        { label: "D. Sistem pencernaan aktif", value: "D" },
+      ],
+      explanation:
+        "Peradangan adalah respon alami tubuh untuk melindungi dan memperbaiki jaringan yang rusak akibat infeksi atau cedera.",
+    },
+    {
+      question: "Apa yang dimaksud dengan autoimunitas?",
+      options: [
+        { label: "A. Kondisi di mana tubuh menyerang sel-sel asing", value: "A" },
+        { label: "B. Kondisi di mana tubuh menyerang sel-sel sendiri", value: "B", isCorrect: true },
+        { label: "C. Kondisi di mana tubuh tidak merespon infeksi", value: "C" },
+        { label: "D. Kondisi di mana tubuh menghasilkan energi berlebih", value: "D" },
+      ],
+      explanation:
+        "Autoimunitas adalah kondisi di mana sistem imun tubuh secara keliru menyerang sel dan jaringan tubuh sendiri.",
+    },
   ];
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -117,8 +172,8 @@ const LatihanSoal5 = () => {
           <h2>Quiz Selesai!</h2>
           <p>Skor Anda: {score}/{questions.length} </p>
           <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
-          Ulangi Latihan
-        </button>
+            Ulangi Latihan
+          </button>
         </div>
       </div>
     );

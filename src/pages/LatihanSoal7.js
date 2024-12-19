@@ -60,6 +60,46 @@ const LatihanSoal = () => {
       ],
       explanation: "Penurunan kadar progesteron yang drastis dapat menyebabkan keguguran, karena hormon ini penting untuk mempertahankan kehamilan dengan menjaga lapisan endometrium.",
     },
+    {
+      question: "Hormon apa yang berperan dalam peningkatan kadar glukosa dalam darah?",
+      options: [
+        { label: "A. Insulin", value: "A" },
+        { label: "B. Glukagon", value: "B", isCorrect: true },
+        { label: "C. Adrenalin", value: "C" },
+        { label: "D. Kortisol", value: "D" },
+      ],
+      explanation: "Glukagon adalah hormon yang diproduksi oleh pankreas dan berfungsi untuk meningkatkan kadar glukosa dalam darah dengan merangsang hati untuk melepaskan glukosa.",
+    },
+    {
+      question: "Apa fungsi utama hormon insulin dalam tubuh manusia?",
+      options: [
+        { label: "A. Mengatur metabolisme lemak", value: "A" },
+        { label: "B. Mengatur kadar glukosa dalam darah", value: "B", isCorrect: true },
+        { label: "C. Meningkatkan tekanan darah", value: "C" },
+        { label: "D. Menstabilkan suhu tubuh", value: "D" },
+      ],
+      explanation: "Insulin adalah hormon yang diproduksi oleh pankreas dan berfungsi untuk menurunkan kadar glukosa dalam darah dengan memfasilitasi masuknya glukosa ke dalam sel-sel tubuh.",
+    },
+    {
+      question: "Hormon mana yang berfungsi untuk meningkatkan metabolisme tubuh dan meningkatkan suhu tubuh?",
+      options: [
+        { label: "A. Thyroxine", value: "A", isCorrect: true },
+        { label: "B. Adrenalin", value: "B" },
+        { label: "C. Insulin", value: "C" },
+        { label: "D. Progesteron", value: "D" },
+      ],
+      explanation: "Thyroxine adalah hormon yang diproduksi oleh kelenjar tiroid dan berfungsi untuk meningkatkan metabolisme tubuh, termasuk meningkatkan suhu tubuh.",
+    },
+    {
+      question: "Hormon yang diproduksi oleh kelenjar adrenal dan berperan dalam respons stres adalah?",
+      options: [
+        { label: "A. Kortisol", value: "A", isCorrect: true },
+        { label: "B. Adrenalin", value: "B" },
+        { label: "C. Insulin", value: "C" },
+        { label: "D. Prolaktin", value: "D" },
+      ],
+      explanation: "Kortisol adalah hormon yang diproduksi oleh kelenjar adrenal dan berperan penting dalam respons tubuh terhadap stres dengan meningkatkan kadar glukosa darah dan menekan peradangan.",
+    },
   ];
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -94,6 +134,7 @@ const LatihanSoal = () => {
   const handleFinishQuiz = () => {
     setIsFinished(true);
   };
+
   const resetQuiz = () => {
     setAnswers([]);
     setIsAnswered(false);
@@ -111,10 +152,10 @@ const LatihanSoal = () => {
           <h2>Quiz Selesai!</h2>
           <p>
             Skor Anda: {score}/{questions.length}
-          </p> 
+          </p>
           <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
-          Ulangi Latihan
-        </button>
+            Ulangi Latihan
+          </button>
         </div>
       </div>
     );

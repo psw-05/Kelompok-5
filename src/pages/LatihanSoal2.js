@@ -50,18 +50,57 @@ const LatihanSoal2 = () => {
       ],
       explanation: "Pada penyakit cystic fibrosis, terdapat mutasi pada protein pembawa yang mengganggu transportasi zat-zat penting seperti ion klorida. Hal ini mengganggu keseimbangan ion dalam sel, yang berakibat pada ketidakseimbangan cairan tubuh dan gangguan dalam fungsi berbagai organ.",
     },
-    
-        {
-          question: "Jika sebuah sel mengalami gangguan dalam mekanisme osmosis, apa yang dapat terjadi pada sel tersebut?",
-          options: [
-            { label: "A.Sel tidak dapat membentuk vesikel ", value: "A" },
-            { label: "B.Sel akan mengalami pembengkakan atau dehidrasi ", value: "B", isCorrect: true },
-            { label: "C.Sel tidak bisa menyintesis protein ", value: "C" },
-            { label: "D.Sel tidak dapat membentuk membran semipermeabel", value: "D" },
-          ],
-          explanation: "Gangguan pada proses osmosis dapat menyebabkan ketidakseimbangan cairan dalam sel. Jika osmosis tidak berjalan dengan baik, sel bisa mengalami pembengkakan (jika terlalu banyak air masuk) atau dehidrasi (jika air keluar dari sel), yang dapat mengganggu fungsi normal sel.",
-        },
-    ]
+    {
+      question: "Jika sebuah sel mengalami gangguan dalam mekanisme osmosis, apa yang dapat terjadi pada sel tersebut?",
+      options: [
+        { label: "A.Sel tidak dapat membentuk vesikel ", value: "A" },
+        { label: "B.Sel akan mengalami pembengkakan atau dehidrasi ", value: "B", isCorrect: true },
+        { label: "C.Sel tidak bisa menyintesis protein ", value: "C" },
+        { label: "D.Sel tidak dapat membentuk membran semipermeabel", value: "D" },
+      ],
+      explanation: "Gangguan pada proses osmosis dapat menyebabkan ketidakseimbangan cairan dalam sel. Jika osmosis tidak berjalan dengan baik, sel bisa mengalami pembengkakan (jika terlalu banyak air masuk) atau dehidrasi (jika air keluar dari sel), yang dapat mengganggu fungsi normal sel.",
+    },
+    {
+      question: "Apa yang dimaksud dengan transportasi aktif?",
+      options: [
+        { label: "A. Pergerakan zat melawan gradien konsentrasi dengan memerlukan energi", value: "A", isCorrect: true },
+        { label: "B. Pergerakan zat dengan memanfaatkan energi dari sinyal luar", value: "B" },
+        { label: "C. Pergerakan zat dengan bantuan protein pembawa", value: "C" },
+        { label: "D. Pergerakan zat melalui saluran protein", value: "D" },
+      ],
+      explanation: "Transportasi aktif adalah pergerakan zat melawan gradien konsentrasi yang memerlukan energi, biasanya dalam bentuk ATP. Ini termasuk proses seperti pompa natrium-kalium.",
+    },
+    {
+      question: "Manakah dari berikut ini yang merupakan contoh transportasi aktif?",
+      options: [
+        { label: "A. Osmosis", value: "A" },
+        { label: "B. Diffusi", value: "B" },
+        { label: "C. Pompa Proton", value: "C", isCorrect: true },
+        { label: "D. Fasilitasi difusi", value: "D" },
+      ],
+      explanation: "Pompa proton adalah contoh transportasi aktif, yang memindahkan proton (ion H+) melawan gradien konsentrasi dengan menggunakan energi.",
+    },
+    {
+      question: "Apa yang terjadi pada sel jika terjadi ketidakseimbangan dalam proses osmosis?",
+      options: [
+        { label: "A. Sel akan kehilangan air dan mengkerut", value: "A" },
+        { label: "B. Sel akan membengkak dan bisa pecah", value: "B", isCorrect: true },
+        { label: "C. Sel akan tetap stabil", value: "C" },
+        { label: "D. Sel akan menghasilkan lebih banyak protein", value: "D" },
+      ],
+      explanation: "Ketidakseimbangan osmosis dapat menyebabkan sel membengkak jika air masuk ke dalam sel atau mengkerut jika air keluar dari sel.",
+    },
+    {
+      question: "Bagaimana sel menjaga keseimbangan cairan melalui membran?",
+      options: [
+        { label: "A. Melalui mekanisme osmosis", value: "A", isCorrect: true },
+        { label: "B. Melalui proses endositosis", value: "B" },
+        { label: "C. Melalui difusi", value: "C" },
+        { label: "D. Melalui transportasi aktif", value: "D" },
+      ],
+      explanation: "Sel menjaga keseimbangan cairan melalui osmosis, yang memungkinkan molekul air bergerak melintasi membran semipermeabel untuk menyeimbangkan konsentrasi zat di dalam dan luar sel.",
+    },
+  ];
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -173,7 +212,3 @@ const LatihanSoal2 = () => {
 };
 
 export default LatihanSoal2;
-
-
-
-

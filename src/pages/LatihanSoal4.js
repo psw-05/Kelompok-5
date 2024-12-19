@@ -14,16 +14,11 @@ const LatihanSoal = () => {
       question: "Apa yang dimaksud dengan transportasi zat dalam tubuh manusia?",
       options: [
         { label: "A. Proses pencernaan makanan", value: "A" },
-        {
-          label: "B. Proses pengangkutan zat-zat penting ke seluruh tubuh",
-          value: "B",
-          isCorrect: true,
-        },
+        { label: "B. Proses pengangkutan zat-zat penting ke seluruh tubuh", value: "B", isCorrect: true },
         { label: "C. Proses penyerapan nutrisi di usus", value: "C" },
         { label: "D. Proses ekskresi zat sisa", value: "D" },
       ],
-      explanation:
-        "Transportasi zat dalam tubuh manusia adalah proses pengangkutan zat-zat penting seperti oksigen, nutrisi, dan hormon ke seluruh bagian tubuh melalui sistem peredaran darah.",
+      explanation: "Transportasi zat dalam tubuh manusia adalah proses pengangkutan zat-zat penting seperti oksigen, nutrisi, dan hormon ke seluruh bagian tubuh melalui sistem peredaran darah.",
     },
     {
       question: "Apa fungsi utama hemoglobin dalam darah?",
@@ -33,20 +28,17 @@ const LatihanSoal = () => {
         { label: "C. Mengatur pH darah", value: "C" },
         { label: "D. Memproduksi sel darah merah", value: "D" },
       ],
-      explanation:
-        "Hemoglobin adalah protein yang terdapat dalam sel darah merah dan berfungsi utama untuk mengangkut oksigen dari paru-paru ke seluruh tubuh.",
+      explanation: "Hemoglobin adalah protein yang terdapat dalam sel darah merah dan berfungsi utama untuk mengangkut oksigen dari paru-paru ke seluruh tubuh.",
     },
     {
-      question:
-        "Di mana proses pertukaran gas (oksigen dan karbon dioksida) terjadi dalam tubuh manusia?",
+      question: "Di mana proses pertukaran gas (oksigen dan karbon dioksida) terjadi dalam tubuh manusia?",
       options: [
         { label: "A. Di jantung", value: "A" },
         { label: "B. Di paru-paru", value: "B", isCorrect: true },
         { label: "C. Di hati", value: "C" },
         { label: "D. Di ginjal", value: "D" },
       ],
-      explanation:
-        "Proses pertukaran gas terjadi di paru-paru, tepatnya di alveolus, di mana oksigen dari udara masuk ke dalam darah dan karbon dioksida dikeluarkan dari darah ke udara.",
+      explanation: "Proses pertukaran gas terjadi di paru-paru, tepatnya di alveolus, di mana oksigen dari udara masuk ke dalam darah dan karbon dioksida dikeluarkan dari darah ke udara.",
     },
     {
       question: "Zat apa yang diangkut oleh sistem limfatik?",
@@ -56,22 +48,70 @@ const LatihanSoal = () => {
         { label: "C. Lemak dan limfa", value: "C", isCorrect: true },
         { label: "D. Karbon dioksida", value: "D" },
       ],
-      explanation:
-        "Sistem limfatik berfungsi untuk mengangkut lemak yang diserap dari usus serta limfa, yang mengandung sel-sel imun, dari jaringan tubuh kembali ke aliran darah.",
+      explanation: "Sistem limfatik berfungsi untuk mengangkut lemak yang diserap dari usus serta limfa, yang mengandung sel-sel imun, dari jaringan tubuh kembali ke aliran darah.",
     },
     {
-      question:
-        "Apa yang terjadi pada sel-sel tubuh saat kekurangan oksigen?",
+      question: "Apa yang terjadi pada sel-sel tubuh saat kekurangan oksigen?",
       options: [
         { label: "A. Sel-sel akan membelah lebih cepat", value: "A" },
         { label: "B. Sel-sel akan mengalami kematian", value: "B", isCorrect: true },
         { label: "C. Sel-sel akan berfungsi lebih efisien", value: "C" },
         { label: "D. Sel-sel akan menghasilkan energi melalui respirasi aerob", value: "D" },
       ],
-      explanation:
-        "Kekurangan oksigen pada sel-sel tubuh dapat menyebabkan gangguan fungsi sel dan akhirnya kematian sel, karena sel tidak dapat melakukan respirasi aerob yang diperlukan untuk menghasilkan energi.",
+      explanation: "Kekurangan oksigen pada sel-sel tubuh dapat menyebabkan gangguan fungsi sel dan akhirnya kematian sel, karena sel tidak dapat melakukan respirasi aerob yang diperlukan untuk menghasilkan energi.",
+    },
+    {
+      question: "Apa fungsi utama pembuluh darah kapiler?",
+      options: [
+        { label: "A. Mengangkut darah kembali ke jantung", value: "A" },
+        { label: "B. Tempat pertukaran zat antara darah dan jaringan", value: "B", isCorrect: true },
+        { label: "C. Menyimpan darah cadangan", value: "C" },
+        { label: "D. Mengatur suhu tubuh", value: "D" },
+      ],
+      explanation: "Pembuluh darah kapiler adalah tempat utama terjadinya pertukaran zat seperti oksigen, karbon dioksida, nutrisi, dan limbah metabolisme antara darah dan jaringan tubuh.",
+    },
+    {
+      question: "Apa yang dimaksud dengan cairan limfa?",
+      options: [
+        { label: "A. Cairan yang mengangkut oksigen dalam darah", value: "A" },
+        { label: "B. Cairan yang membawa limfosit dan lemak", value: "B", isCorrect: true },
+        { label: "C. Cairan yang membantu proses pencernaan", value: "C" },
+        { label: "D. Cairan yang diproduksi oleh hati", value: "D" },
+      ],
+      explanation: "Cairan limfa adalah cairan yang mengandung limfosit (sel darah putih) dan lemak, yang diangkut melalui sistem limfatik untuk menjaga keseimbangan cairan dan melawan infeksi.",
+    },
+    {
+      question: "Apa peran utama plasma darah?",
+      options: [
+        { label: "A. Mengangkut oksigen", value: "A" },
+        { label: "B. Membawa nutrisi, hormon, dan sisa metabolisme", value: "B", isCorrect: true },
+        { label: "C. Membekukan darah", value: "C" },
+        { label: "D. Menghancurkan bakteri", value: "D" },
+      ],
+      explanation: "Plasma darah membawa berbagai zat penting seperti nutrisi, hormon, dan limbah metabolisme ke seluruh tubuh.",
+    },
+    {
+      question: "Bagaimana karbon dioksida dikeluarkan dari tubuh?",
+      options: [
+        { label: "A. Melalui kulit", value: "A" },
+        { label: "B. Melalui paru-paru", value: "B", isCorrect: true },
+        { label: "C. Melalui ginjal", value: "C" },
+        { label: "D. Melalui hati", value: "D" },
+      ],
+      explanation: "Karbon dioksida, sebagai produk sisa metabolisme, dikeluarkan dari tubuh melalui paru-paru saat bernapas.",
+    },
+    {
+      question: "Apa yang terjadi di glomerulus ginjal?",
+      options: [
+        { label: "A. Penyerapan oksigen ke dalam darah", value: "A" },
+        { label: "B. Penyaringan darah untuk membentuk urin", value: "B", isCorrect: true },
+        { label: "C. Pengangkutan nutrisi ke jaringan", value: "C" },
+        { label: "D. Pengeluaran hormon insulin", value: "D" },
+      ],
+      explanation: "Glomerulus adalah struktur di ginjal yang berfungsi untuk menyaring darah dan memulai pembentukan urin.",
     },
   ];
+  
 
   const currentQuestion = questions[currentQuestionIndex];
 

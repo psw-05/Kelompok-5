@@ -60,6 +60,46 @@ const LatihanSoal = () => {
       ],
       explanation: "Tumbuh kembang makhluk hidup dipengaruhi oleh kombinasi faktor genetik (yang diwariskan dari orang tua) dan faktor lingkungan (seperti nutrisi, suhu, cahaya, dan kelembapan).",
     },
+    {
+      question: "Apa yang dimaksud dengan diferensiasi sel?",
+      options: [
+        { label: "A. Proses sel berkembang menjadi bentuk dan fungsi yang lebih spesifik", value: "A", isCorrect: true },
+        { label: "B. Proses pembelahan sel yang menghasilkan dua sel identik", value: "B" },
+        { label: "C. Proses penggabungan dua sel menjadi satu", value: "C" },
+        { label: "D. Proses sel mengubah bentuk sesuai dengan lingkungan", value: "D" },
+      ],
+      explanation: "Diferensiasi sel adalah proses di mana sel yang belum terdiferensiasi berubah menjadi sel dengan bentuk dan fungsi yang lebih spesifik, yang memungkinkan mereka untuk melakukan tugas tertentu dalam tubuh.",
+    },
+    {
+      question: "Hormon apa yang berperan dalam proses pembentukan tulang?",
+      options: [
+        { label: "A. Estrogen", value: "A" },
+        { label: "B. Testosteron", value: "B" },
+        { label: "C. Hormon pertumbuhan (GH)", value: "C", isCorrect: true },
+        { label: "D. Insulin", value: "D" },
+      ],
+      explanation: "Hormon pertumbuhan (GH) berperan penting dalam proses pembentukan tulang dan pemeliharaan struktur tubuh, serta mempengaruhi pertumbuhan dan perkembangan jaringan tubuh lainnya.",
+    },
+    {
+      question: "Apa yang dimaksud dengan adaptasi pada makhluk hidup?",
+      options: [
+        { label: "A. Proses perubahan fisik dan perilaku untuk menyesuaikan diri dengan lingkungan", value: "A", isCorrect: true },
+        { label: "B. Proses pembelahan sel untuk menghasilkan keturunan", value: "B" },
+        { label: "C. Proses pertumbuhan pada tubuh makhluk hidup", value: "C" },
+        { label: "D. Proses reproduksi pada makhluk hidup", value: "D" },
+      ],
+      explanation: "Adaptasi adalah proses perubahan fisik dan perilaku pada makhluk hidup yang memungkinkan mereka untuk menyesuaikan diri dengan lingkungan dan bertahan hidup.",
+    },
+    {
+      question: "Apa yang dimaksud dengan regenerasi pada hewan?",
+      options: [
+        { label: "A. Proses pertumbuhan kembali bagian tubuh yang hilang atau rusak", value: "A", isCorrect: true },
+        { label: "B. Proses pembelahan sel untuk menghasilkan individu baru", value: "B" },
+        { label: "C. Proses perubahan bentuk tubuh pada hewan dewasa", value: "C" },
+        { label: "D. Proses pembuahan pada hewan", value: "D" },
+      ],
+      explanation: "Regenerasi adalah proses di mana makhluk hidup, terutama hewan, dapat menghasilkan kembali bagian tubuh yang hilang atau rusak, seperti yang terjadi pada bintang laut yang dapat menumbuhkan kembali lengan yang hilang.",
+    },
   ];
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -114,8 +154,8 @@ const LatihanSoal = () => {
             Skor Anda: {score}/{questions.length}
           </p> 
           <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
-          Ulangi Latihan
-        </button>
+            Ulangi Latihan
+          </button>
         </div>
       </div>
     );
