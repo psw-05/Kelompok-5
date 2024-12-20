@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./tryout.css";
 import Timer from "./Timer";
@@ -6,21 +6,6 @@ import Question from "./Question";
 
 const Tryout = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {  
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;  
-      }
-      navigate("/login");
-    }
-  }, [navigate]); 
 
   const questions = [
     { question: "1. Apa fungsi enzim katalase?", options: ["Memecah lemak", "Menguraikan hidrogen peroksida", "Mengubah amilum", "Mengangkut oksigen"], answer: "Menguraikan hidrogen peroksida" },
@@ -42,7 +27,7 @@ const Tryout = () => {
     { question: "17. Apa nama proses perpindahan molekul air melalui membran?", options: ["Osmosis", "Difusi", "Endositosis", "Eksositosis"], answer: "Osmosis" },
     { question: "18. Apa nama organ reproduksi jantan pada tumbuhan berbunga?", options: ["Benang sari", "Putik", "Kepala sari", "Ovarium"], answer: "Benang sari" },
     { question: "19. Apa yang terjadi pada tanaman jika stomata tertutup terlalu lama?", options: ["Fotosintesis menurun", "Penyerapan air meningkat", "Transpirasi meningkat", "Pertukaran gas meningkat"], answer: "Fotosintesis menurun" },
-    { question: "20. Apa yang dimaksud dengan jaringan meristem?", options: ["Jaringan yang aktif membelah", "Jaringan pelindung", "Jaringan pengangkut", "Jaringan penyokong"],  answer: "Jaringan yang aktif membelah" }
+    { question: "20. Apa yang dimaksud dengan jaringan meristem?", options: ["Jaringan yang aktif membelah", "Jaringan pelindung", "Jaringan pengangkut", "Jaringan penyokong"], answer: "Jaringan yang aktif membelah" }
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -65,14 +50,11 @@ const Tryout = () => {
     setShowResult(true);
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
-    navigate("/login");
+  const handleContinue = () => {
+    setShowResult(false);
+    setCurrentQuestion(0); 
+    setScore(0); 
   };
-
-  if (!isAuthenticated) {
-    return null;
-  }
 
   return (
     <div className="app">
@@ -81,6 +63,7 @@ const Tryout = () => {
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>
           <p>Terima kasih telah mengikuti tryout!</p>
+          <button onClick={handleContinue} className="continue-button">Ulangi Tryout</button>
         </div>
       ) : (
         <>
@@ -92,7 +75,6 @@ const Tryout = () => {
           />
         </>
       )}
-      <button onClick={handleLogout} className="logout-button">Logout</button>
     </div>
   );
 };
