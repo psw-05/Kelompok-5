@@ -120,6 +120,18 @@ const LatihanSoal5 = () => {
       explanation:
         "Autoimunitas adalah kondisi di mana sistem imun tubuh secara keliru menyerang sel dan jaringan tubuh sendiri.",
     },
+    {
+      question: "Apa fungsi utama dari antibodi dalam sistem imun manusia?",
+      options: [
+        { label: "A. Mengangkut oksigen", value: "A" },
+        { label: "B. Menetralkan antigen seperti bakteri dan virus", value: "B", isCorrect: true },
+        { label: "C. Mengatur tekanan darah", value: "C" },
+        { label: "D. Menghasilkan energi untuk tubuh", value: "D" },
+      ],
+      explanation:
+        "Fungsi utama antibodi adalah menetralkan antigen seperti bakteri dan virus, membantu tubuh melawan infeksi.",
+    },
+    
   ];
 
   const currentQuestion = questions[currentQuestionIndex];

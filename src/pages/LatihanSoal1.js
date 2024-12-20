@@ -11,6 +11,18 @@ const LatihanSoal1 = () => {
 
   const questions = [
     {
+      question: "Apa yang dimaksud dengan teori sel dalam biologi?",
+      options: [
+        { label: "A. Semua makhluk hidup tersusun dari sel", value: "A", isCorrect: true },
+        { label: "B. Sel adalah unit fungsional terkecil dari organisme", value: "B" },
+        { label: "C. Semua sel berasal dari sel sebelumnya", value: "C" },
+        { label: "D. Semua jawaban benar", value: "D" },
+      ],
+      explanation:
+        "Teori Sel menyatakan bahwa sel adalah unit struktural dan fungsional dasar dari makhluk hidup. Semua makhluk hidup tersusun dari satu atau lebih sel, dan semua fungsi kehidupan terjadi dalam sel.",
+    },
+    
+    {
       question: "Apa fungsi utama dari membran sel dalam suatu sel?",
       options: [
         { label: "A. Mengatur keluar masuknya zat", value: "A", isCorrect: true },
@@ -171,6 +183,9 @@ const LatihanSoal1 = () => {
       <div className="latihan-soal1-question-box">
         <h1 className="latihan-soal1-title">Mode Bionik</h1>
         <div className="latihan-soal1-question">
+        <h2>
+            Soal Nomor {currentQuestionIndex + 1}/{questions.length}
+        </h2>
           <p>{currentQuestion.question}</p>
         </div>
         <div className="latihan-soal1-answers">

@@ -100,7 +100,17 @@ const LatihanSoal3 = () => {
       ],
       explanation: "Transpirasi adalah proses penguapan air melalui stomata yang membantu mengatur suhu dan keseimbangan air pada tumbuhan.",
     },
-  ];
+      {
+        question: "Apa yang dimaksud dengan fotosintesis pada tumbuhan?",
+        options: [
+          { label: "A. Proses pengolahan makanan pada tumbuhan dengan bantuan cahaya.", value: "A", isCorrect: true },
+          { label: "B. Proses penguapan air melalui stomata.", value: "B" },
+          { label: "C. Proses pertukaran gas di akar tumbuhan.", value: "C" },
+          { label: "D. Proses pembuatan energi listrik pada tumbuhan.", value: "D" },
+        ],
+        explanation: "Fotosintesis adalah proses pembuatan makanan pada tumbuhan dengan bantuan cahaya matahari, air, dan karbon dioksida untuk menghasilkan glukosa dan oksigen.",
+      },
+    ];
 
   const currentQuestion = questions[currentQuestionIndex];
 

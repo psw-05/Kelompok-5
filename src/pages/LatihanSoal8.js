@@ -3,8 +3,8 @@ import "./LatihanSoal1.css";
 
 const LatihanSoal = () => {
   const [answers, setAnswers] = useState([]);
-  const [setIsAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
+  const [isAnswered, setIsAnswered] = useState(false);
+ const [isCorrect, setIsCorrect] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
@@ -100,6 +100,16 @@ const LatihanSoal = () => {
       ],
       explanation: "Regenerasi adalah proses di mana makhluk hidup, terutama hewan, dapat menghasilkan kembali bagian tubuh yang hilang atau rusak, seperti yang terjadi pada bintang laut yang dapat menumbuhkan kembali lengan yang hilang.",
     },
+    {
+      question: "Apa yang dimaksud dengan fotosintesis pada tumbuhan?",
+      options: [
+        { label: "A. Proses respirasi yang menghasilkan energi", value: "A" },
+        { label: "B. Proses pemecahan molekul air menjadi oksigen", value: "B" },
+        { label: "C. Proses pembuatan makanan dengan bantuan cahaya matahari", value: "C", isCorrect: true },
+        { label: "D. Proses penguapan air melalui stomata", value: "D" },
+      ],
+      explanation: "Fotosintesis adalah proses di mana tumbuhan hijau menggunakan cahaya matahari, karbon dioksida, dan air untuk menghasilkan makanan berupa glukosa dan oksigen sebagai produk sampingannya.",
+    }    
   ];
 
   const currentQuestion = questions[currentQuestionIndex];

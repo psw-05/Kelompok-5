@@ -125,7 +125,7 @@ const LatihanSoal = () => {
       ],
       explanation:
         "Jika sistem peredaran darah terganggu, tubuh akan mengalami kesulitan dalam mengangkut oksigen dan nutrisi ke seluruh tubuh, yang dapat menyebabkan gangguan fungsi organ.",
-    },
+    },  
   ];
 
   const currentQuestion = questions[currentQuestionIndex];

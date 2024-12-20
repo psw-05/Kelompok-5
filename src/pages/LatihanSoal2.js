@@ -100,6 +100,16 @@ const LatihanSoal2 = () => {
       ],
       explanation: "Sel menjaga keseimbangan cairan melalui osmosis, yang memungkinkan molekul air bergerak melintasi membran semipermeabel untuk menyeimbangkan konsentrasi zat di dalam dan luar sel.",
     },
+    {
+      question: "Bagaimana proses difusi terjadi dalam membran sel?",
+      options: [
+        { label: "A. Molekul bergerak melawan gradien konsentrasi", value: "A" },
+        { label: "B. Molekul bergerak mengikuti gradien konsentrasi tanpa memerlukan energi", value: "B", isCorrect: true },
+        { label: "C. Molekul bergerak menggunakan energi dari ATP", value: "C" },
+        { label: "D. Molekul bergerak dengan bantuan vesikel", value: "D" },
+      ],
+      explanation: "Difusi adalah pergerakan molekul dari daerah dengan konsentrasi tinggi ke daerah dengan konsentrasi rendah, tanpa memerlukan energi. Proses ini terjadi secara alami untuk menyeimbangkan konsentrasi zat di kedua sisi membran.",
+    },
   ];
 
   const currentQuestion = questions[currentQuestionIndex];

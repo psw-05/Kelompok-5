@@ -100,6 +100,16 @@ const LatihanSoal = () => {
       ],
       explanation: "Kortisol adalah hormon yang diproduksi oleh kelenjar adrenal dan berperan penting dalam respons tubuh terhadap stres dengan meningkatkan kadar glukosa darah dan menekan peradangan.",
     },
+    {
+      question: "Hormon apa yang berperan dalam proses kontraksi rahim saat persalinan?",
+      options: [
+        { label: "A. Prolaktin", value: "A" },
+        { label: "B. Oksitosin", value: "B", isCorrect: true },
+        { label: "C. Kortisol", value: "C" },
+        { label: "D. Adrenalin", value: "D" },
+      ],
+      explanation: "Oksitosin adalah hormon yang dihasilkan oleh kelenjar hipofisis posterior dan berperan penting dalam proses kontraksi rahim saat persalinan serta dalam produksi ASI.",
+    },    
   ];
 
   const currentQuestion = questions[currentQuestionIndex];
