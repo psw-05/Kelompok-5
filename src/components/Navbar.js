@@ -25,6 +25,7 @@ function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/VidioMateri">VideoMateri</Link>
         <Link to="/quiz">Quiz</Link>
+        <Link to="/latihanquiz">Latihan Quiz</Link>
         {isAuthenticated ? (
           <>
             <Link to="/dashboard">Dashboard</Link>

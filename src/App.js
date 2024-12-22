@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './pages/Login';
-import Register from './pages/Register';
 import Home from './pages/Home'; 
 import Materi from './pages/Materi';
 import Quiz from './pages/Quiz';
@@ -25,6 +24,10 @@ import LatihanSoal6 from "./pages/LatihanSoal6";
 import LatihanSoal7 from "./pages/LatihanSoal7";
 import LatihanSoal8 from "./pages/LatihanSoal8";
 import VideoMateri from "./pages/VideoMateri.js";
+import QuizBab1 from './pages/QuizBab1.js';
+import QuizBab2 from './pages/QuizBab2.js';
+import QuizBab3 from './pages/QuizBab3.js';
+import LatihanQuiz from './pages/LatihanQuiz.js';
 
 
 function App() {
@@ -36,7 +39,11 @@ function App() {
        
         <Route path="/" element={<Home />} />
         <Route path="/materi" element={<Materi />} />
+        <Route path="/latihanquiz" element={<LatihanQuiz />} /> 
         <Route path="/quiz" element={<Quiz />} /> 
+        <Route path="/quizbab1" element={<QuizBab1 />} /> 
+        <Route path="/quizbab2" element={<QuizBab2 />} />
+        <Route path="/quizbab3" element={<QuizBab3 />} />
         <Route path="/bab1" element={<Bab1 />} />
         <Route path="/bab2" element={<Bab2 />} />
         <Route path="/bab3" element={<Bab3 />} />
