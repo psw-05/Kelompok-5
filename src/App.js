@@ -27,6 +27,11 @@ import VideoMateri from "./pages/VideoMateri.js";
 import QuizBab1 from './pages/QuizBab1.js';
 import QuizBab2 from './pages/QuizBab2.js';
 import QuizBab3 from './pages/QuizBab3.js';
+import QuizBab4 from './pages/QuizBab4.js';
+import QuizBab5 from './pages/QuizBab5.js';
+import QuizBab6 from './pages/QuizBab6.js';
+import QuizBab7 from './pages/QuizBab7.js';
+import QuizBab8 from './pages/QuizBab8.js';
 import LatihanQuiz from './pages/LatihanQuiz.js';
 
 
@@ -44,6 +49,11 @@ function App() {
         <Route path="/quizbab1" element={<QuizBab1 />} /> 
         <Route path="/quizbab2" element={<QuizBab2 />} />
         <Route path="/quizbab3" element={<QuizBab3 />} />
+        <Route path="/quizbab4" element={<QuizBab4 />} />
+        <Route path="/quizbab5" element={<QuizBab5 />} />
+        <Route path="/quizbab6" element={<QuizBab6 />} />
+        <Route path="/quizbab7" element={<QuizBab7 />} />
+        <Route path="/quizbab8" element={<QuizBab8 />} />
         <Route path="/bab1" element={<Bab1 />} />
         <Route path="/bab2" element={<Bab2 />} />
         <Route path="/bab3" element={<Bab3 />} />

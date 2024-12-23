@@ -104,16 +104,6 @@ const QuizBab3 = () => {
       answer: 0
     },
     {
-      question: "Apa hasil akhir dari glikolisis?",
-      options: [
-        "Dua molekul asam piruvat dan dua ATP",
-        "Empat molekul ATP dan dua NADH",
-        "Enam molekul CO2",
-        "Tiga molekul NADH"
-      ],
-      answer: 0
-    },
-    {
       question: "Apa yang terjadi dalam proses fotosintesis?",
       options: [
         "Molekul oksigen digunakan untuk menghasilkan energi",
@@ -239,9 +229,9 @@ const QuizBab3 = () => {
 
   return (
     <div className="quiz-container">
+      <h1>Bab 3: Proses Pengaturan pada Tumbuhan</h1>
       {showResult ? (
         <div className="result-container">
-          <h1>Hasil Kuis</h1>
           <h2>Skor Anda: {score} / {questions.length}</h2>
           <p>{score >= 15 ? "Luar biasa! Anda memahami materi dengan baik." : "Tetap semangat! Pelajari lagi materi ini untuk memperkuat pemahaman Anda."}</p>
           <button onClick={resetQuiz}>Ulangi Kuis</button>
@@ -251,9 +241,16 @@ const QuizBab3 = () => {
           <h2>{questions[currentQuestion].question}</h2>
           <div className="options-container">
             {questions[currentQuestion].options.map((option, index) => (
-              <button key={index} onClick={() => handleAnswer(index)}>{option}</button>
+              <button 
+                key={index} 
+                className="btn-option" 
+                onClick={() => handleAnswer(index)}
+              >
+                {option}
+              </button>
             ))}
           </div>
+          <p>Pertanyaan {currentQuestion + 1} dari {questions.length}</p>
         </div>
       )}
     </div>

@@ -229,9 +229,9 @@ const QuizBab2 = () => {
 
   return (
     <div className="quiz-container">
+      <h1>Bab 2: Pergerakan Zat melalui Membran Sel</h1>
       {showResult ? (
         <div className="result-container">
-          <h1>Hasil Kuis</h1>
           <h2>Skor Anda: {score} / {questions.length}</h2>
           <p>{score >= 15 ? "Luar biasa! Anda memahami materi dengan baik." : "Tetap semangat! Pelajari lagi materi ini untuk memperkuat pemahaman Anda."}</p>
           <button onClick={resetQuiz}>Ulangi Kuis</button>
@@ -241,9 +241,16 @@ const QuizBab2 = () => {
           <h2>{questions[currentQuestion].question}</h2>
           <div className="options-container">
             {questions[currentQuestion].options.map((option, index) => (
-              <button key={index} onClick={() => handleAnswer(index)}>{option}</button>
+              <button 
+                key={index} 
+                className="btn-option" 
+                onClick={() => handleAnswer(index)}
+              >
+                {option}
+              </button>
             ))}
           </div>
+          <p>Pertanyaan {currentQuestion + 1} dari {questions.length}</p>
         </div>
       )}
     </div>
